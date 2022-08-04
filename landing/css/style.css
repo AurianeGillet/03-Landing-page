@@ -1,0 +1,117 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+@import url("components/cards.css");
+@import url("components/button.css");
+
+body {
+  margin: 0;
+  font-family: Open Sans;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+.container {
+  background-size: cover;
+  width: 800px;
+  margin: auto;
+}
+
+.banner {
+  background-image: url("../images/svetlana-gumerova-gOLCAOuc7iA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  padding:200px 0;
+}
+
+h1 {
+  color: white;
+}
+
+.banner p {
+  color: white;
+}
+
+.transparent {
+  background-color:rgba(255, 255, 255, 0.292);
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card img {
+  height: 100px;
+}
+.card {
+  width: 200px;
+  border:rgba(127, 125, 125);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #9b2325;
+  margin-top: 30px;
+}
+
+.footer a {
+  font-size: 30px;
+  color: white;
+}
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+
+.footer h4 {
+  color: white;
+  font-weight: light;
+}
+
+.footer .fas {
+  color: #BF0F12;
+}
